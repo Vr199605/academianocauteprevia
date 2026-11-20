@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Academia Nocaute · Vila Flávia, Duque de Caxias</title>
+<meta name="description" content="Academia Nocaute em Vila Flávia, Duque de Caxias. Agende sua aula experimental pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bk:#0b0b0c;--bk2:#161618;--bk3:#202024;--lime:#c6ff2e;--wh:#f4f2ee;--gr:#a2a29c;--line:rgba(244,242,238,.14);--disp:'Bebas Neue',Impact,'Arial Narrow Bold','Arial Black',sans-serif;--sans:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bk);color:var(--wh);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+svg{display:block;max-width:100%}a{color:inherit}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+.wm{position:fixed;inset:0;z-index:90;pointer-events:none;background-repeat:repeat;background-size:420px 260px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='260'%3E%3Cg transform='rotate(-24 210 130)' font-family='Arial,sans-serif' text-anchor='middle' fill='%23fff' fill-opacity='.1'%3E%3Ctext x='210' y='125' font-size='34' font-weight='700' letter-spacing='6'%3EPR%C3%89VIA%3C/text%3E%3Ctext x='210' y='152' font-size='13' letter-spacing='3'%3EPROPOSTA DE SITE%3C/text%3E%3C/g%3E%3C/svg%3E")}
+.banner{background:var(--lime);color:#111;font-size:13px;font-weight:600;text-align:center;padding:9px 16px}
+header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{text-decoration:none;font-family:var(--disp);font-size:1.9rem;letter-spacing:.06em;line-height:1}
+.brand span{color:var(--lime)}
+nav ul{display:flex;gap:30px;list-style:none;font-weight:600;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--gr);transition:color .2s}nav a:hover{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:#111;text-decoration:none;font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;padding:17px 30px;clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);transition:background .25s,transform .25s}
+.btn:hover{background:#fff;transform:translateX(4px)}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+.btn.ghost{background:transparent;color:var(--wh);box-shadow:inset 0 0 0 2px var(--line);clip-path:none}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px var(--lime);color:var(--lime);background:transparent}
+.btn.sm{padding:12px 20px;font-size:.8rem}
+.hero{position:relative;overflow:hidden;padding:70px 0 100px}
+.hero::before{content:"";position:absolute;right:-8%;top:0;bottom:0;width:48%;background:repeating-linear-gradient(115deg,var(--bk2) 0 38px,var(--bk) 38px 76px);clip-path:polygon(22% 0,100% 0,100% 100%,0 100%)}
+.hero::after{content:"";position:absolute;right:6%;top:10%;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(198,255,46,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--lime);margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--lime)}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(3.4rem,10vw,9rem);line-height:.88;letter-spacing:.01em;text-transform:uppercase}
+h1 .o{color:transparent;-webkit-text-stroke:2px var(--wh)}
+h1 .l{color:var(--lime)}
+.lead{margin-top:26px;font-size:1.15rem;color:#d6d4ce;max-width:28em}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+.stats div{font-family:var(--disp);font-size:1.6rem;letter-spacing:.06em;line-height:1.1}
+.stats small{display:block;font-family:var(--sans);font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gr)}
+.badge{width:100%;max-width:320px;margin-inline:auto;aspect-ratio:1;border-radius:50%;border:2px solid var(--lime);display:grid;place-items:center;text-align:center;position:relative;animation:spin 30s linear infinite}
+.badge::before{content:"";position:absolute;inset:14px;border-radius:50%;border:1px dashed rgba(198,255,46,.5)}
+.badge div{font-family:var(--disp);font-size:2.3rem;line-height:.95;letter-spacing:.04em;color:var(--wh);animation:spinr 30s linear infinite}
+.badge div b{color:var(--lime);font-weight:400;display:block;font-size:1.2rem;letter-spacing:.3em;margin-top:8px}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes spinr{to{transform:rotate(-360deg)}}
+.tickw{overflow:hidden;padding:16px 0}.tick{background:var(--lime);color:#111;overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg);margin:0 -3%}
+.track{display:inline-flex;animation:slide 24s linear infinite;padding:12px 0}
+.track span{font-family:var(--disp);font-size:1.5rem;letter-spacing:.08em;text-transform:uppercase;padding:0 26px}
+.track span::after{content:"/";margin-left:52px;opacity:.5}
+@keyframes slide{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(2.4rem,5.4vw,4.4rem);line-height:.98;letter-spacing:.015em;text-transform:uppercase}
+h2 span{color:var(--lime)}
+.sub{margin-top:14px;color:var(--gr);max-width:34em}
+.sec-h{margin-bottom:46px}
+.mods{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.mod{padding:40px 32px 36px;border-right:1px solid var(--line);position:relative;overflow:hidden;transition:background .3s}
+.mod:last-child{border-right:0}
+.mod:hover{background:var(--bk2)}
+.mod .n{font-family:var(--disp);font-size:5rem;line-height:.8;color:transparent;-webkit-text-stroke:1.5px rgba(198,255,46,.55)}
+.mod h3{font-family:var(--disp);font-weight:400;font-size:2rem;letter-spacing:.04em;text-transform:uppercase;margin:18px 0 8px}
+.mod p{color:var(--gr);font-size:.98rem}
+.note{margin-top:22px;font-size:.86rem;color:var(--gr)}
+.why{background:var(--bk2);border-block:1px solid var(--line)}
+.wg{display:grid;grid-template-columns:repeat(2,1fr);gap:0 56px}
+.wi{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:26px 0;border-bottom:1px solid var(--line)}
+.wi i{font-family:var(--disp);font-style:normal;font-size:2.2rem;color:var(--lime);line-height:1}
+.wi h3{font-family:var(--disp);font-weight:400;font-size:1.6rem;letter-spacing:.04em;text-transform:uppercase}
+.wi p{color:var(--gr);font-size:.97rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{background:var(--bk2);border:1px solid var(--line);padding:34px 28px;display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.plan:hover{transform:translateY(-6px);border-color:var(--lime)}
+.plan.hot{background:var(--lime);color:#111;border-color:var(--lime)}
+.plan .k{font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7}
+.plan h3{font-family:var(--disp);font-weight:400;font-size:2.4rem;letter-spacing:.03em;text-transform:uppercase;line-height:1;margin:10px 0 10px}
+.plan p{font-size:.97rem;flex:1;margin-bottom:22px;opacity:.85}
+.plan .btn{align-self:flex-start}
+.plan.hot .btn{background:#111;color:var(--lime)}.plan.hot .btn:hover{background:#fff;color:#111}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--lime)}
+.st{padding:30px 30px 6px 0}.st+.st{padding-left:30px;border-left:1px solid var(--line)}
+.st .n{font-family:var(--disp);font-size:3.6rem;color:var(--lime);line-height:1}
+.st h3{font-family:var(--disp);font-weight:400;font-size:1.8rem;letter-spacing:.04em;text-transform:uppercase;margin:6px 0 6px}
+.st p{color:var(--gr);font-size:.97rem}
+.final{background:var(--lime);color:#111;padding:90px 0;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;right:-60px;top:-40px;bottom:-40px;width:42%;background:repeating-linear-gradient(115deg,rgba(0,0,0,.08) 0 30px,transparent 30px 60px)}
+.final .wrap{position:relative}
+.final h2{color:#111;max-width:9em}
+.final p{margin:18px 0 30px;max-width:30em;font-weight:500}
+.final .btn{background:#111;color:var(--lime)}.final .btn:hover{background:#fff;color:#111}
+.loc{display:flex;flex-wrap:wrap;gap:12px 44px;margin-top:44px;padding-top:24px;border-top:2px solid rgba(0,0,0,.25)}
+.loc b{display:block;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.loc span{font-family:var(--disp);font-size:1.5rem;letter-spacing:.04em;line-height:1.2}
+footer{padding:28px 0 110px;font-size:.84rem;color:var(--gr)}
+footer p{max-width:52em;margin-bottom:8px}footer .pf{color:var(--lime);font-weight:600}
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.7);transition:transform .2s}
+.fab:hover{transform:scale(1.08)}.fab svg{width:29px;height:29px;fill:#fff}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}.d1{transition-delay:.1s}.d2{transition-delay:.2s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.badge,.badge div,.track{animation:none}html{scroll-behavior:auto}}
+@media(max-width:900px){
+ nav ul{display:none}.hero{padding:44px 0 70px}.hero .wrap{grid-template-columns:1fr}.hero::before{width:70%;opacity:.7}.badge{max-width:220px;margin:10px auto 0}
+ .badge div{font-size:1.6rem}section{padding:64px 0}
+ .mods,.plans{grid-template-columns:1fr}.mod{border-right:0;border-bottom:1px solid var(--line)}.mod:last-child{border-bottom:0}
+ .wg{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.st,.st+.st{padding:24px 0 6px;border-left:0}.st+.st{border-top:1px solid var(--line)}
+ .final::before{display:none}
+}
+@media(max-width:600px){
+ body{font-size:16.5px}.wrap{width:calc(100% - 36px)}.nav{height:64px}.nav .btn{padding:10px 14px;font-size:.72rem}
+ .brand{font-size:1.5rem}.cta .btn{width:100%;justify-content:center}.banner{font-size:12px}
+ h1{font-size:clamp(3.2rem,17vw,5rem)}.stats div{font-size:1.35rem}.wi{grid-template-columns:44px 1fr}
+}
+</style>
+</head>
+<body>
+<div class="wm" aria-hidden="true"></div>
+<div class="banner">PRÉVIA · Proposta de site para Academia Nocaute — versão de demonstração, não publicada</div>
+<header><div class="wrap nav">
+ <a class="brand" href="#topo">ACADEMIA <span>NOCAUTE</span></a>
+ <nav><ul><li><a href="#modalidades">Modalidades</a></li><li><a href="#porque">Diferenciais</a></li><li><a href="#planos">Planos</a></li><li><a href="#contato">Contato</a></li></ul></nav>
+ <a class="btn sm" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Aula experimental</a>
+</div></header>
+<main id="topo">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <div class="eyebrow rv">Vila Flávia · Duque de Caxias</div>
+   <h1 class="rv d1">Treine <span class="o">forte.</span><br><span class="l">Vá além.</span></h1>
+   <p class="lead rv d2">Uma academia para quem quer sair do lugar. Venha conhecer o espaço e agende sua aula experimental pelo WhatsApp.</p>
+   <div class="cta rv d2"><a class="btn" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Agendar aula experimental</a><a class="btn ghost" href="#planos">Ver planos</a></div>
+   <div class="stats rv d2"><div>Treino<small>Para todos os níveis</small></div><div>Atendimento<small>Direto no WhatsApp</small></div><div>Vila Flávia<small>Duque de Caxias</small></div></div>
+  </div>
+  <div class="badge rv d1" aria-hidden="true"><div>NOCAUTE<b>ACADEMIA</b></div></div>
+ </div>
+</section>
+<div class="tickw"><div class="tick" aria-hidden="true"><div class="track"><span>Treine forte</span><span>Aula experimental</span><span>Fale no WhatsApp</span><span>Vila Flávia</span><span>Treine forte</span><span>Aula experimental</span><span>Fale no WhatsApp</span><span>Vila Flávia</span></div></div></div>
+
+<section id="modalidades">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Escolha o seu <span>treino</span></h2><p class="sub">Atividades para diferentes objetivos e níveis. Consulte as modalidades disponíveis no atendimento.</p></div>
+  <div class="mods">
+   <article class="mod rv"><span class="n">01</span><h3>Musculação</h3><p>Treino com acompanhamento, para quem busca força, condicionamento e rotina.</p></article>
+   <article class="mod rv d1"><span class="n">02</span><h3>Funcional</h3><p>Exercícios dinâmicos para movimentar o corpo todo e variar o treino.</p></article>
+   <article class="mod rv d2"><span class="n">03</span><h3>Lutas</h3><p>Treino de luta para condicionamento, técnica e disciplina.</p></article>
+  </div>
+  <p class="note rv">Modalidades de exemplo. A lista real da academia entra aqui.</p>
+ </div>
+</section>
+
+<section class="why" id="porque">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Por que treinar <span>aqui</span></h2></div>
+  <div class="wg">
+   <div class="wi rv"><i>01</i><div><h3>Atendimento próximo</h3><p>Você é recebido e orientado, sem se sentir só mais um.</p></div></div>
+   <div class="wi rv d1"><i>02</i><div><h3>Para todos os níveis</h3><p>Do primeiro treino ao mais experiente, no seu ritmo.</p></div></div>
+   <div class="wi rv"><i>03</i><div><h3>Perto de você</h3><p>Em Vila Flávia, fácil de encaixar na sua rotina.</p></div></div>
+   <div class="wi rv d1"><i>04</i><div><h3>Fale direto</h3><p>Tire dúvidas e agende pelo WhatsApp, sem burocracia.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="planos">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Escolha seu <span>plano</span></h2><p class="sub">Os valores e as condições são informados pelo WhatsApp.</p></div>
+  <div class="plans">
+   <article class="plan rv"><span class="k">Para começar</span><h3>Mensal</h3><p>Flexibilidade para quem quer experimentar a rotina de treino.</p><a class="btn sm" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20plano%20mensal." target="_blank" rel="noopener">Consultar</a></article>
+   <article class="plan hot rv d1"><span class="k">Mais procurado</span><h3>Aula experimental</h3><p>Conheça o espaço e o treino antes de decidir. Agende pelo WhatsApp.</p><a class="btn sm" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener">Agendar</a></article>
+   <article class="plan rv d2"><span class="k">Para ir longe</span><h3>Planos longos</h3><p>Condições para quem quer treinar com constância ao longo do ano.</p><a class="btn sm" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20saber%20sobre%20os%20planos%20longos." target="_blank" rel="noopener">Consultar</a></article>
+  </div>
+  <p class="note rv">Estrutura de exemplo. Planos e valores reais entram aqui, conforme a academia.</p>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Comece em <span>3 passos</span></h2></div>
+  <div class="steps">
+   <div class="st rv"><span class="n">1</span><h3>Chame no WhatsApp</h3><p>Conte seu objetivo e tire suas dúvidas.</p></div>
+   <div class="st rv d1"><span class="n">2</span><h3>Agende sua aula</h3><p>Escolha o dia e o horário que cabem na sua rotina.</p></div>
+   <div class="st rv d2"><span class="n">3</span><h3>Venha treinar</h3><p>Conheça o espaço e dê o primeiro passo.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="final" id="contato">
+ <div class="wrap">
+  <h2 class="rv">Seu primeiro treino começa aqui.</h2>
+  <p class="rv d1">Agende sua aula experimental e venha conhecer a Academia Nocaute.</p>
+  <a class="btn rv d2" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a>
+  <div class="loc rv d2"><div><b>Endereço</b><span>R. Dep. Soares Filho, 500 · Vila Flávia · Duque de Caxias</span></div><div><b>WhatsApp</b><span>(21) 96999-3690</span></div><div><b>Horários</b><span>Consulte no WhatsApp</span></div></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">
+ <p class="pf">PRÉVIA · Proposta de site de demonstração. Modalidades, planos, valores, horários, fotos e demais dados a confirmar com a academia.</p>
+ <p>Academia Nocaute · Duque de Caxias, RJ. Consulte um profissional de saúde antes de iniciar atividades físicas.</p>
+</div></footer>
+<a class="fab" href="https://wa.me/5521969993690?text=Ol%C3%A1!%20Quero%20saber%20sobre%20planos%20e%20aula%20experimental." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+<script>
+(function(){var els=[].slice.call(document.querySelectorAll('.rv'));
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(e){io.observe(e)});
+setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4500);})();
+</script>
+</body>
+</html>
